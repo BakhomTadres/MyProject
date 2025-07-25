@@ -972,6 +972,7 @@ a {
   }
   .work-steps .steps .step img {
     margin: 0 0 20px;
+    margin-right: 0 !important;
   }
 }
 .work-steps .steps .step img {
