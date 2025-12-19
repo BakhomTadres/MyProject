@@ -218,25 +218,21 @@ a {
 .header .main-nav > li > a:hover::before {
   left: 0;
 }
-.header .main-nav > li:last-child:hover .mega-menu {
-  opacity: 1;
-  top: calc(100% + 1px);
-  z-index: 100;
-}
+
 .header .mega-menu {
   position: absolute;
   width: 100%;
   left: 0;
-  top: calc(100% + 50px);
+  top: calc(100% + 20px);
   padding: 20px;
   background-color: #fff;
   border-bottom: 3px solid var(--main-color);
   z-index: 100;
   display: flex;
   gap: 40px;
-  transition: top var(--main-transition), opacity var(--main-transition);
-  z-index: -1;
+  transition: top var(--main-transition), opacity 0.7s;
   opacity: 0;
+  z-index: -1;
 }
 .header .mega-menu img {
   width: 400px;
@@ -260,6 +256,7 @@ a {
 .header .mega-menu .links {
   min-width: 250px;
   flex: 1;
+  padding-top: 35px;
 }
 .header .mega-menu .links li {
   position: relative;
@@ -290,6 +287,25 @@ a {
 }
 .header .mega-menu .links li i {
   margin-right: 10px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  border-radius: 4px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: 0.2s;
+}
+.close:hover {
+  opacity: 0.7;
 }
 /* End Header */
 /* Start Landing */
@@ -365,6 +381,29 @@ a {
 }
 .landing a.go-down i {
   animation: bouncing 1.5s infinite;
+}
+.arrow-up {
+  position: fixed;
+  width: 50px;
+  background-color: darkgray;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+  transition: var(--main-transition);
+  animation: bouncing 1.5s infinite;
+  font-size: 26px;
+}
+.arrow-up:hover {
+  background-color: var(--main-color-alt);
+  box-shadow: 0px 0px 15px 5px var(--main-color);
 }
 /* End Landing */
 /* Start Articles */
@@ -1335,7 +1374,7 @@ a {
 .stats .container .box::after {
   content: "";
   position: absolute;
-  width: 2px;
+  width: 3px;
   height: 0;
   background-color: var(--main-color);
   transition: 1s;
@@ -1350,7 +1389,7 @@ a {
 }
 .stats .container .box::after {
   bottom: 0;
-  left: 0;
+  left: 1px;
 }
 
 .stats .container .box span.number {
