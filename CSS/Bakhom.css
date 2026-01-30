@@ -105,7 +105,8 @@ a {
   right: 0;
   width: 100%;
   height: 30px;
-  background-image: linear-gradient(225deg, #fff 25%, transparent 25%),
+  background-image:
+    linear-gradient(225deg, #fff 25%, transparent 25%),
     linear-gradient(135deg, #fff 25%, transparent 25%);
   background-size: 30px 30px;
 }
@@ -230,7 +231,9 @@ a {
   z-index: 100;
   display: flex;
   gap: 40px;
-  transition: top var(--main-transition), opacity 0.7s;
+  transition:
+    top var(--main-transition),
+    opacity 0.7s;
   opacity: 0;
   z-index: -1;
 }
@@ -251,6 +254,9 @@ a {
   }
   .header .mega-menu ul:first-of-type {
     border-bottom: 1px solid #e9e6e6;
+  }
+  .header .mega-menu ul:last-of-type {
+    padding-top: 0;
   }
 }
 .header .mega-menu .links {
@@ -423,7 +429,8 @@ a {
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
   border-radius: 6px;
   overflow: hidden;
-  transition: transform var(--main-transition),
+  transition:
+    transform var(--main-transition),
     box-shadow var(--main-transition);
 }
 .articles .box:hover {
@@ -478,7 +485,8 @@ a {
   align-items: center;
   background-color: #fff;
   padding: 15px;
-  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%),
+  box-shadow:
+    0px 12px 20px 0px rgb(0 0 0 / 13%),
     0px 2px 4px 0px rgb(0 0 0 / 12%);
 }
 
@@ -680,7 +688,8 @@ a {
   background-color: #fff;
   padding: 15px;
   border-radius: 6px;
-  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%),
+  box-shadow:
+    0px 12px 20px 0px rgb(0 0 0 / 13%),
     0px 2px 4px 0px rgb(0 0 0 / 12%);
 }
 .testimonials .box img {
@@ -834,9 +843,15 @@ a {
 
 .services .box {
   background-color: #fff;
-  -webkit-box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px rgb(0 0 0 / 12%);
-  -moz-box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px rgb(0 0 0 / 12%);
-  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px rgb(0 0 0 / 12%);
+  -webkit-box-shadow:
+    0 12px 20px 0 rgb(0 0 0 / 13%),
+    0 2px 4px rgb(0 0 0 / 12%);
+  -moz-box-shadow:
+    0 12px 20px 0 rgb(0 0 0 / 13%),
+    0 2px 4px rgb(0 0 0 / 12%);
+  box-shadow:
+    0 12px 20px 0 rgb(0 0 0 / 13%),
+    0 2px 4px rgb(0 0 0 / 12%);
   counter-increment: services;
   transition: var(--main-transition);
   position: relative;
@@ -1157,7 +1172,9 @@ a {
 .pricing .container .box {
   background-color: #fff;
   border-radius: 6px;
-  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px rgb(0 0 0 / 12%);
+  box-shadow:
+    0 12px 20px 0 rgb(0 0 0 / 13%),
+    0 2px 4px rgb(0 0 0 / 12%);
   position: relative;
   z-index: 1;
 }
